@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <title>scratch tickets</title>
+  <style type="text/css">
+    .scratch-tickets {
+      width: 410px;
+      height: 210px;
+      margin: 100px auto 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="J_scratchTickets" class="scratch-tickets"></div>
+  <script src="scratchTickets.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    scratchTickets(document.getElementById('J_scratchTickets'), {
+      width: 410,
+      height: 210,
+      text: {
+        size: 30,
+        content: '明天再试一次吧,亲'
+      },
+      //url: 'tumblr_mz3jdlGmgl1qbfo7so1_1280.jpg',
+      area: {
+        width: 330,
+        height: 30,
+        x: 80,
+        y: 90
+      },
+      scratchSize: 16,
+      callback: function(){
+        console.log('ok');
+      }
+    });
+  </script>
+</body>
+</html>
